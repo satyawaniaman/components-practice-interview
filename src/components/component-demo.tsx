@@ -1,4 +1,3 @@
-import { ButtonDemo } from '@/components/demos/ButtonDemo';
 import { CardDemo } from '@/components/demos/CardDemo';
 import StarRatingDemo from './demos/StarRatingDemo';
 
@@ -9,9 +8,6 @@ interface ComponentDemoProps {
 export function ComponentDemo({ componentName }: ComponentDemoProps) {
 	const renderDemo = () => {
 		switch (componentName.toLowerCase()) {
-			case 'button':
-				return <ButtonDemo />;
-
 			case 'card':
 				return <CardDemo />;
 			case 'star rating':
