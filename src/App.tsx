@@ -2,7 +2,6 @@ import { BrowserRouter, Routes, Route } from 'react-router';
 import { ThemeProvider } from '@/components/theme-provider';
 import Home from '@/pages/Home';
 import ComponentPage from '@/pages/ComponentPage';
-import './App.css';
 
 function App() {
 	return (

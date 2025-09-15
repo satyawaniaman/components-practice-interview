@@ -18,6 +18,12 @@ export const components: ComponentInfo[] = [
 		description: 'Displays a card with header, content, and footer.',
 		category: 'Layout',
 	},
+	{
+		name: 'star rating',
+		title: 'Star Rating',
+		description: 'Displays a star rating component.',
+		category: 'Display',
+	},
 ];
 
 export const categories = ['All', 'Form', 'Layout', 'Display'];

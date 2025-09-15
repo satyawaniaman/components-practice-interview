@@ -1,5 +1,6 @@
 import { ButtonDemo } from '@/components/demos/ButtonDemo';
 import { CardDemo } from '@/components/demos/CardDemo';
+import StarRatingDemo from './demos/StarRatingDemo';
 
 interface ComponentDemoProps {
 	componentName: string;
@@ -13,7 +14,8 @@ export function ComponentDemo({ componentName }: ComponentDemoProps) {
 
 			case 'card':
 				return <CardDemo />;
-
+			case 'star rating':
+				return <StarRatingDemo />;
 			default:
 				return (
 					<div className="p-8 text-center">

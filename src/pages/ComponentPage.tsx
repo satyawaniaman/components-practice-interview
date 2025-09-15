@@ -10,7 +10,7 @@ export default function ComponentPage() {
 
 	if (!componentName) {
 		return (
-			<div className="bg-background flex min-h-screen items-center justify-center">
+			<div className="bg-background mx-auto flex min-h-screen items-center justify-center px-4 lg:w-5xl">
 				<Card>
 					<CardHeader>
 						<CardTitle>Component Not Found</CardTitle>
@@ -32,24 +32,27 @@ export default function ComponentPage() {
 	}
 
 	return (
-		<div className="bg-background min-h-screen">
+		<div className="bg-background mx-auto min-h-screen px-4 lg:w-5xl">
 			{/* Header */}
 			<header className="border-b">
-				<div className="container mx-auto flex items-center justify-between px-4 py-4">
-					<div className="flex items-center gap-4">
-						<Link to="/">
-							<Button variant="outline" size="sm">
-								<ArrowLeft className="mr-2 h-4 w-4" />
-								Back
-							</Button>
-						</Link>
-						<div>
-							<h1 className="text-2xl font-bold capitalize">
-								{componentName.replace('-', ' ')}
-							</h1>
-							<p className="text-muted-foreground">Component demonstration</p>
-						</div>
+				<div className="container mx-auto flex items-center justify-between py-4">
+					{/* Left side - Back button */}
+					<Link to="/">
+						<Button variant="outline" size="sm">
+							<ArrowLeft className="mr-2 h-4 w-4" />
+							Back
+						</Button>
+					</Link>
+
+					{/* Center - Heading */}
+					<div className="flex flex-col items-center">
+						<h1 className="text-2xl font-bold capitalize">
+							{componentName.replace('-', ' ')}
+						</h1>
+						<p className="text-muted-foreground">Component demonstration</p>
 					</div>
+
+					{/* Right side - Theme toggle */}
 					<ThemeToggle />
 				</div>
 			</header>
