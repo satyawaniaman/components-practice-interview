@@ -18,6 +18,18 @@ export const components: ComponentInfo[] = [
 		description: 'Displays a star rating component.',
 		category: 'Display',
 	},
+	// {
+	// 	name: 'notification',
+	// 	title: 'Notification',
+	// 	description: 'Displays a notification component.',
+	// 	category: 'Display',
+	// },
+	{
+		name: 'accordian',
+		title: 'Accordian',
+		description: 'Displays an accordian component.',
+		category: 'Display',
+	},
 ];
 
 export const categories = ['All', 'Form', 'Layout', 'Display'];

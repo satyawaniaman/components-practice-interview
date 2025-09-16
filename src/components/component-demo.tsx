@@ -1,6 +1,7 @@
 import { CardDemo } from '@/components/demos/CardDemo';
 import StarRatingDemo from './demos/StarRatingDemo';
-
+// import NotificationDemo from './demos/NotificationDemo';
+import AccordianDemo from './demos/AccordianDemo';
 interface ComponentDemoProps {
 	componentName: string;
 }
@@ -12,6 +13,10 @@ export function ComponentDemo({ componentName }: ComponentDemoProps) {
 				return <CardDemo />;
 			case 'star rating':
 				return <StarRatingDemo />;
+			// case 'notification':
+			// 	return <NotificationDemo />;
+			case 'accordian':
+				return <AccordianDemo />;
 			default:
 				return (
 					<div className="p-8 text-center">
