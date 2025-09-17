@@ -2,6 +2,7 @@ import { CardDemo } from '@/components/demos/CardDemo';
 import StarRatingDemo from './demos/StarRatingDemo';
 // import NotificationDemo from './demos/NotificationDemo';
 import AccordianDemo from './demos/AccordianDemo';
+import { ProgressBarDemo } from './demos/ProgressBarDemo';
 interface ComponentDemoProps {
 	componentName: string;
 }
@@ -17,6 +18,8 @@ export function ComponentDemo({ componentName }: ComponentDemoProps) {
 			// 	return <NotificationDemo />;
 			case 'accordian':
 				return <AccordianDemo />;
+			case 'progress bar':
+				return <ProgressBarDemo />;
 			default:
 				return (
 					<div className="p-8 text-center">

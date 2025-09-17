@@ -30,6 +30,12 @@ export const components: ComponentInfo[] = [
 		description: 'Displays an accordian component.',
 		category: 'Display',
 	},
+	{
+		name: 'progress bar',
+		title: 'Progress Bar',
+		description: 'Displays a progress bar component.',
+		category: 'Display',
+	},
 ];
 
 export const categories = ['All', 'Form', 'Layout', 'Display'];
