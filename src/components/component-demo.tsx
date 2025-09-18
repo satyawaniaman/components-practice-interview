@@ -3,6 +3,7 @@ import StarRatingDemo from './demos/StarRatingDemo';
 // import NotificationDemo from './demos/NotificationDemo';
 import AccordianDemo from './demos/AccordianDemo';
 import { ProgressBarDemo } from './demos/ProgressBarDemo';
+import HeaderDemo from './demos/HeaderDemo';
 interface ComponentDemoProps {
 	componentName: string;
 }
@@ -20,6 +21,8 @@ export function ComponentDemo({ componentName }: ComponentDemoProps) {
 				return <AccordianDemo />;
 			case 'progress bar':
 				return <ProgressBarDemo />;
+			case 'header':
+				return <HeaderDemo />;
 			default:
 				return (
 					<div className="p-8 text-center">

@@ -36,6 +36,12 @@ export const components: ComponentInfo[] = [
 		description: 'Displays a progress bar component.',
 		category: 'Display',
 	},
+	{
+		name: 'header',
+		title: 'Header',
+		description: 'Displays a header component.',
+		category: 'Layout',
+	},
 ];
 
 export const categories = ['All', 'Form', 'Layout', 'Display'];
