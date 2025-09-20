@@ -7,12 +7,6 @@ export interface ComponentInfo {
 
 export const components: ComponentInfo[] = [
 	{
-		name: 'card',
-		title: 'Card',
-		description: 'Displays a card with header, content, and footer.',
-		category: 'Layout',
-	},
-	{
 		name: 'star rating',
 		title: 'Star Rating',
 		description: 'Displays a star rating component.',
@@ -40,6 +34,12 @@ export const components: ComponentInfo[] = [
 		name: 'header',
 		title: 'Header',
 		description: 'Displays a header component.',
+		category: 'Layout',
+	},
+	{
+		name: 'feature card',
+		title: 'Feature Card',
+		description: 'Displays a feature card component.',
 		category: 'Layout',
 	},
 ];
